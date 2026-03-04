@@ -239,49 +239,57 @@
       "name": "Introduction to Cybersecurity",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749459024/I2CS__1__hxlqbe.png",
       "category": "Badge",
-      "url": "https://www.credly.com/badges/81432355-c7ed-45e2-8298-a0921f175dc5/public_url"
+      "url": "https://www.credly.com/badges/81432355-c7ed-45e2-8298-a0921f175dc5/public_url",
+      "obtained": "November 11, 2023"
     },
     {
       "name": "OneLogin Technical Specialist",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749458590/OneloginTechnicalSpecialist_dwrbc6.png",
       "category": "Badge",
-      "url": "https://www.credly.com/badges/f24d1004-9ddd-4b96-96ed-d86079f2b94a/public_url"
+      "url": "https://www.credly.com/badges/f24d1004-9ddd-4b96-96ed-d86079f2b94a/public_url",
+      "obtained": "January 23, 2023"
     },
     {
       "name": "Safeguard Implementation Professional",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749462842/Implementation_ydb3ir.png",
       "category": "Badge",
-      "url": "https://www.credly.com/badges/4bd2c19e-b134-4172-88f9-f1133a628672/public_url"
+      "url": "https://www.credly.com/badges/4bd2c19e-b134-4172-88f9-f1133a628672/public_url",
+      "obtained": "September 11, 2023"
     },
     {
       "name": "IBM QRadar SIEM Foundations",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749462687/IBMQRadar_re7qmy.png",
       "category": "Badge",
-      "url": "https://www.credly.com/badges/e8490729-8d47-4251-b81b-0144004dda9c/public_url"
+      "url": "https://www.credly.com/badges/e8490729-8d47-4251-b81b-0144004dda9c/public_url",
+      "obtained": "Aprip 17, 2023"
     },
     {
       "name": "Verify Access Technical Sales Intermediate",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749462925/Verifyaccess_k6wn8v.png",
       "category": "Badge",
-      "url": "https://www.credly.com/badges/847d8386-438e-4cd7-9b11-4b37f0d84c8c/public_url"
+      "url": "https://www.credly.com/badges/847d8386-438e-4cd7-9b11-4b37f0d84c8c/public_url",
+      "obtained": "September 05, 2024"
     },
     {
       "name": "Verify Privilege Technical Sales Intermediate",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749463034/Verifyprev_tuzdce.png",
       "category": "Badge",
-      "url": "https://www.credly.com/badges/a5cd75fb-279f-4296-8dc4-991fbbc47d4f/public_url"
+      "url": "https://www.credly.com/badges/a5cd75fb-279f-4296-8dc4-991fbbc47d4f/public_url",
+      "obtained": "December 06, 2024"
     },
     {
       "name": "Getting Started in Cybersecurity 1.0",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749463145/fortinet_cyber_vd8kpj.png",
       "category": "Badge",
-      "url": "https://www.credly.com/badges/a80ed390-7e73-4cbc-9416-737420bfee7f/public_url"
+      "url": "https://www.credly.com/badges/a80ed390-7e73-4cbc-9416-737420bfee7f/public_url",
+      "obtained": "February 06, 2023"
     },
     {
       "name": "Introduction to the Threat Landscape 1.0",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749463223/landscape_fortinet_zavlhk.png",
       "category": "Badge",
-      "url": "https://www.credly.com/badges/cb44ec9d-bbf2-420f-800c-2f62221f0be9/public_url"
+      "url": "https://www.credly.com/badges/cb44ec9d-bbf2-420f-800c-2f62221f0be9/public_url",
+      "obtained": "February 01, 2023"
     }
   ],
   "projects": [
