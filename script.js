@@ -515,39 +515,16 @@ function renderEducationSection() {
 
 // ===== Clients Section =====
 function renderClientsSection() {
-    // Sample clients (you can move this to JSON later)
-    const clients = [
-        {
-            name: 'TechCorp',
-            logo: 'https://via.placeholder.com/120',
-            industry: 'Technology'
-        },
-        {
-            name: 'FinanceHub',
-            logo: 'https://via.placeholder.com/120',
-            industry: 'Financial Services'
-        },
-        {
-            name: 'HealthCare Plus',
-            logo: 'https://via.placeholder.com/120',
-            industry: 'Healthcare'
-        },
-        {
-            name: 'EduGlobal',
-            logo: 'https://via.placeholder.com/120',
-            industry: 'Education'
-        },
-        {
-            name: 'RetailMax',
-            logo: 'https://via.placeholder.com/120',
-            industry: 'Retail'
-        },
-        {
-            name: 'ManufacturePro',
-            logo: 'https://via.placeholder.com/120',
-            industry: 'Manufacturing'
-        }
-    ];
+    // Get clients from portfolioData
+    const clients = portfolioData?.clients || [];
+    
+    console.log('Clients data:', clients); // Check what's in clients
+    
+    // If no clients, don't show the section
+    if (!clients || clients.length === 0) {
+        console.log('No clients to display');
+        return '';
+    }
     
     return `
         <section id="clients" class="clients-section">
@@ -561,10 +538,13 @@ function renderClientsSection() {
                     ${clients.map(client => `
                         <div class="client-card fade-up">
                             <div class="client-logo">
-                                <img src="${client.logo}" alt="${client.name}" loading="lazy">
+                                <img src="${client.logo || 'https://via.placeholder.com/120'}" 
+                                     alt="${client.name}" 
+                                     loading="lazy"
+                                     onerror="this.src='https://via.placeholder.com/120'">
                             </div>
                             <h3>${client.name}</h3>
-                            <p>${client.industry}</p>
+                            <p>${client.industry || ''}</p>
                         </div>
                     `).join('')}
                 </div>
