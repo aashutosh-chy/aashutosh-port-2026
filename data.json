@@ -546,9 +546,19 @@
       "industry": "FinTech"
     },
     {
-      "name": "SRM Films",
-      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
-      "industry": "Media & Entertainment"
+      "name": "Four Symmetrons",
+      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772640883/632168e0a9338e7d0b50b204_Four_Symmetrons_jyg706.jpg",
+      "industry": "Technology Consulting"
+    },
+    {
+      "name": "Sanima Bank Limited",
+      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772641008/061149-sanma-bank-logo_yuywfg.png",
+      "industry": "Banking & Financial Services"
+    },
+    {
+      "name": "Sanima Capital",
+      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772641094/1713267073864_a4iaq4.jpg",
+      "industry": "Investment Banking"
     }
   ]
 }
