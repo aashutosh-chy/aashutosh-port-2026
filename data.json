@@ -521,29 +521,29 @@
   ],
   "clients": [
     {
-      "name": "Raechal Enterprises Pvt. Ltd",
-      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
-      "industry": "IT Security Solutions"
+      "name": "Nepal Insurance Authority",
+      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772640418/images_e5ii8v.jpg",
+      "industry": "Insurance Regulation"
     },
     {
-      "name": "Max International",
-      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
-      "industry": "Technology"
-    },
-    {
-      "name": "AI Solution Pvt. Ltd",
-      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
-      "industry": "AI & Security"
-    },
-    {
-      "name": "iCash Pvt. Ltd",
-      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
+      "name": "City Pay",
+      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772640544/citypay_logo_fc8dg2.png",
       "industry": "FinTech"
     },
     {
-      "name": "Virtually Testing Foundation",
-      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
-      "industry": "Cybersecurity Education"
+      "name": "Khalti by IME",
+      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772640654/channels4_profile_xvr5at.jpg",
+      "industry": "FinTech"
+    },
+    {
+      "name": "eSewa",
+      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772640720/unnamed_yrqyj3.png",
+      "industry": "FinTech"
+    },
+    {
+      "name": "Fonepay",
+      "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772640761/unnamed_1_hdpv8v.png",
+      "industry": "FinTech"
     },
     {
       "name": "SRM Films",
