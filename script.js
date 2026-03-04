@@ -595,9 +595,9 @@ function renderContactSection() {
 
 // ===== Helper Functions =====
 function extractUsername(url) {
-    if (!url) return 'username';
+    if (!url) return 'aashutos';
     const parts = url.split('/');
-    return parts[parts.length - 1] || 'username';
+    return parts[parts.length - 1] || 'aashutos';
 }
 
 // ===== Typewriter Effect =====
