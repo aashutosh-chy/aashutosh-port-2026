@@ -530,7 +530,7 @@ function renderClientsSection() {
         <section id="clients" class="clients-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Clients & <span class="gradient-text">Partners</span></h2>
+                    <h2 class="section-title">Clients</h2>
                     <p class="section-subtitle">Organizations I've had the pleasure to work with</p>
                 </div>
                 
