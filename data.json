@@ -128,28 +128,33 @@
       "oem": "Blue Team Security",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749459375/securityblueteam_fyxicu.jpg",
       "category": "Certifications",
-      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749462173/Blue_Team_Junior_Analyst_Pathway_Bundle-btja-1_ojwrik.png"
+      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749462173/Blue_Team_Junior_Analyst_Pathway_Bundle-btja-1_ojwrik.png",
+      "obtained": "December 20, 2022"
     },
     {
       "name": "SentinelOne Sales Engineer Expert",
       "oem": "SentinelOne",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749459618/SentinalOne_ipeo9i.png",
       "category": "Certifications",
-      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749536280/SentinelOne_Pre-Sales_Tech_Accreditation_Procient_page-0001_qa1y4n.jpg"
+      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749536280/SentinelOne_Pre-Sales_Tech_Accreditation_Procient_page-0001_qa1y4n.jpg",
+      "obtained": "March 30, 2025",
+      "expiry": "March 30, 2026"
     },
     {
       "name": "Certified in Cybersecurity (CC) Self-Placed",
       "oem": "ISC2",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464489/isc2-logo-png_seeklogo-30_p5nd0x.png",
       "category": "Certifications",
-      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464488/Official_CC_Course_Completion_Certificate_Official_ISC_Certified_in_Cybersecurity_CC_Self-Paced_Training_-_1M_Chaudhary_page-0001_vhauuq.jpg"
+      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464488/Official_CC_Course_Completion_Certificate_Official_ISC_Certified_in_Cybersecurity_CC_Self-Paced_Training_-_1M_Chaudhary_page-0001_vhauuq.jpg",
+      "obtained": "January 18, 2023"
     },
     {
       "name": "IT Fundamentals for Cybersecurity",
       "oem": "IBM",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749463906/IBM_ykqpuz.png",
       "category": "Certifications",
-      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464044/IT_Fundamentals_for_Cybersecurity-1_dgem65.png"
+      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464044/IT_Fundamentals_for_Cybersecurity-1_dgem65.png",
+      "obtained": "August 10, 2020"
     },
     {
       "name": "Global Cyberpeace Challenge 3.0",
@@ -162,7 +167,8 @@
       "oem": "Google",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464191/Google__G__logo.svg_rncyg0.png",
       "category": "Certifications",
-      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464168/Google_Garage_Digital_Marketing-1_kvnr4i.png"
+      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464168/Google_Garage_Digital_Marketing-1_kvnr4i.png",
+      "obtained": "April 05, 2020"
     },
 
 
