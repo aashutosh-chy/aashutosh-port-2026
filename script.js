@@ -10,23 +10,23 @@ const themeToggle = document.getElementById('themeToggle');
 // ===== Load JSON Data =====
 async function loadPortfolioData() {
     try {
-        // Show loading state
         mainContent.innerHTML = `
             <div class="loading">
                 <i class="fas fa-circle-notch fa-spin"></i> Loading portfolio...
             </div>
         `;
         
-        const response = await fetch('data.json');
+        // Add timestamp to prevent caching
+        const response = await fetch(`data.json?t=${Date.now()}`);
+        
         if (!response.ok) {
             throw new Error('Failed to load portfolio data');
         }
         portfolioData = await response.json();
         
-        // Render all sections
-        renderPortfolio();
+        console.log('Portfolio data loaded:', portfolioData); // Check this
         
-        // Initialize all features after rendering
+        renderPortfolio();
         initializeAfterRender();
     } catch (error) {
         console.error('Error loading portfolio data:', error);
