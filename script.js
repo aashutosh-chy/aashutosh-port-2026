@@ -735,7 +735,6 @@ function initCertificateModal() {
     
     if (!modal || !closeBtn) return;
     
-    // Remove any existing event listeners and add new ones
     certCards.forEach(card => {
         card.addEventListener('click', function(e) {
             // Don't open modal if clicking on verify link
@@ -744,8 +743,11 @@ function initCertificateModal() {
             }
             
             try {
+                // Parse the certificate data
                 const certData = JSON.parse(this.dataset.cert.replace(/&apos;/g, "'"));
+                console.log('Certificate data:', certData); // Debug: see what data we have
                 
+                // Get modal elements
                 const certFullImage = document.getElementById('certFullImage');
                 const certTitle = document.getElementById('certTitle');
                 const certIssuer = document.getElementById('certIssuer');
@@ -753,17 +755,20 @@ function initCertificateModal() {
                 const certExpiry = document.getElementById('certExpiry');
                 const certVerify = document.getElementById('certVerify');
                 
+                // Set the values
                 if (certFullImage) certFullImage.src = certData.image || '';
                 if (certTitle) certTitle.textContent = certData.name || '';
                 if (certIssuer) certIssuer.textContent = `Issuer: ${certData.oem || 'Unknown'}`;
                 if (certObtained) certObtained.textContent = `Obtained: ${certData.obtained || 'N/A'}`;
                 if (certExpiry) certExpiry.textContent = `Expires: ${certData.expiry || 'No Expiry'}`;
                 
-                // Set the verify link
+                // IMPORTANT: Set the verify link to the SAME URL as the card button
                 if (certVerify) {
                     if (certData.url) {
-                        certVerify.href = certData.url;
+                        certVerify.href = certData.url;  // Set the URL
+                        certVerify.target = '_blank';     // Open in new tab
                         certVerify.style.display = 'inline-flex';
+                        console.log('Set verify URL to:', certData.url); // Debug
                     } else {
                         certVerify.href = '#';
                         certVerify.style.display = 'none';
@@ -781,12 +786,20 @@ function initCertificateModal() {
     // Close modal when clicking close button
     closeBtn.addEventListener('click', () => {
         modal.classList.remove('active');
-        document.body.style.redirect = 'auto';
+        document.body.style.overflow = 'auto';
     });
     
     // Close modal when clicking outside
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Also handle escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
             modal.classList.remove('active');
             document.body.style.overflow = 'auto';
         }
