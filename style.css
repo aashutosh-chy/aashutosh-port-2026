@@ -1693,3 +1693,44 @@ body.dark-theme .skill-category {
         padding: 20px 0;
     }
 }
+
+/* Ensure modal verify button is clickable */
+#certVerify {
+    position: relative;
+    z-index: 1002;
+    cursor: pointer;
+    pointer-events: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--success);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    margin-top: 20px;
+}
+
+#certVerify:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+#certVerify i {
+    font-size: 1.1rem;
+}
+
+/* Ensure modal content doesn't block clicks */
+.cert-modal-content {
+    pointer-events: auto;
+    position: relative;
+    z-index: 1001;
+}
+
+.cert-details {
+    pointer-events: auto;
+}

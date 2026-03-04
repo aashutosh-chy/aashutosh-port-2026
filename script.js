@@ -735,75 +735,14 @@ function initCertificateModal() {
     
     if (!modal || !closeBtn) return;
     
-    // Remove any existing event listeners and add fresh ones
-    certCards.forEach(card => {
-        card.addEventListener('click', function(e) {
-            // Don't open modal if clicking on verify link
-            if (e.target.closest('.cert-verify')) {
-                return; // Let the link work normally
-            }
-            
-            try {
-                // Parse the certificate data from the data-cert attribute
-                const certData = JSON.parse(this.dataset.cert.replace(/&apos;/g, "'"));
-                console.log('Opening modal for:', certData.name);
-                console.log('Verify URL:', certData.url);
-                
-                // Get modal elements
-                const certFullImage = document.getElementById('certFullImage');
-                const certTitle = document.getElementById('certTitle');
-                const certIssuer = document.getElementById('certIssuer');
-                const certObtained = document.getElementById('certObtained');
-                const certExpiry = document.getElementById('certExpiry');
-                const certVerify = document.getElementById('certVerify');
-                
-                // Set the image
-                if (certFullImage) {
-                    certFullImage.src = certData.image || '';
-                    certFullImage.alt = certData.name || 'Certificate';
-                }
-                
-                // Set the text content
-                if (certTitle) certTitle.textContent = certData.name || '';
-                if (certIssuer) certIssuer.textContent = `Issuer: ${certData.oem || 'Unknown'}`;
-                if (certObtained) certObtained.textContent = `Obtained: ${certData.obtained || 'N/A'}`;
-                if (certExpiry) certExpiry.textContent = `Expires: ${certData.expiry || 'No Expiry'}`;
-                
-                // IMPORTANT: Set the verify button to use the SAME URL as the card
-                if (certVerify) {
-                    if (certData.url) {
-                        certVerify.href = certData.url;      // Set the URL from JSON
-                        certVerify.target = '_blank';         // Open in new tab
-                        certVerify.rel = 'noopener noreferrer'; // Security
-                        certVerify.style.display = 'inline-flex';
-                        certVerify.textContent = 'Verify Certificate';
-                        // Add icon if needed
-                        certVerify.innerHTML = '<i class="fas fa-check-circle"></i> Verify Certificate';
-                    } else {
-                        certVerify.href = '#';
-                        certVerify.style.display = 'none';
-                    }
-                }
-                
-                // Show the modal
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
-                
-            } catch (e) {
-                console.error('Error parsing certificate data:', e);
-            }
-        });
+    // Close modal when clicking close button
+    closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
     });
     
-    // Close modal when clicking close button
-    if (closeBtn) {
-        closeBtn.addEventListener('click', () => {
-            modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        });
-    }
-    
-    // Close modal when clicking outside the content
+    // Close modal when clicking outside
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.classList.remove('active');
@@ -811,7 +750,64 @@ function initCertificateModal() {
         }
     });
     
-    // Close modal with Escape key
+    // Handle verify button click separately
+    const certVerify = document.getElementById('certVerify');
+    if (certVerify) {
+        certVerify.addEventListener('click', (e) => {
+            e.stopPropagation(); // Stop event from bubbling
+            // The link will work normally
+        });
+    }
+    
+    // Handle card clicks
+    certCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Don't open modal if clicking on verify link
+            if (e.target.closest('.cert-verify')) {
+                return;
+            }
+            
+            try {
+                const certData = JSON.parse(this.dataset.cert.replace(/&apos;/g, "'"));
+                
+                // Set modal content
+                document.getElementById('certFullImage').src = certData.image || '';
+                document.getElementById('certTitle').textContent = certData.name || '';
+                document.getElementById('certIssuer').textContent = `Issuer: ${certData.oem || 'Unknown'}`;
+                document.getElementById('certObtained').textContent = `Obtained: ${certData.obtained || 'N/A'}`;
+                document.getElementById('certExpiry').textContent = `Expires: ${certData.expiry || 'No Expiry'}`;
+                
+                // Set verify button
+                const verifyBtn = document.getElementById('certVerify');
+                if (verifyBtn) {
+                    if (certData.url) {
+                        verifyBtn.href = certData.url;
+                        verifyBtn.target = '_blank';
+                        verifyBtn.rel = 'noopener noreferrer';
+                        verifyBtn.style.display = 'inline-flex';
+                        verifyBtn.innerHTML = '<i class="fas fa-check-circle"></i> Verify Certificate';
+                        
+                        // Remove any existing click handlers and add fresh one
+                        verifyBtn.onclick = function(e) {
+                            e.stopPropagation();
+                            window.open(certData.url, '_blank');
+                            return false;
+                        };
+                    } else {
+                        verifyBtn.style.display = 'none';
+                    }
+                }
+                
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                
+            } catch (e) {
+                console.error('Error parsing certificate data:', e);
+            }
+        });
+    });
+    
+    // Close with Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
             modal.classList.remove('active');
