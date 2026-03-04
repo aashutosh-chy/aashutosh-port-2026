@@ -735,6 +735,7 @@ function initCertificateModal() {
     
     if (!modal || !closeBtn) return;
     
+    // Remove any existing event listeners and add fresh ones
     certCards.forEach(card => {
         card.addEventListener('click', function(e) {
             // Don't open modal if clicking on verify link
@@ -743,9 +744,10 @@ function initCertificateModal() {
             }
             
             try {
-                // Parse the certificate data
+                // Parse the certificate data from the data-cert attribute
                 const certData = JSON.parse(this.dataset.cert.replace(/&apos;/g, "'"));
-                console.log('Certificate data:', certData); // Debug: see what data we have
+                console.log('Opening modal for:', certData.name);
+                console.log('Verify URL:', certData.url);
                 
                 // Get modal elements
                 const certFullImage = document.getElementById('certFullImage');
@@ -755,28 +757,38 @@ function initCertificateModal() {
                 const certExpiry = document.getElementById('certExpiry');
                 const certVerify = document.getElementById('certVerify');
                 
-                // Set the values
-                if (certFullImage) certFullImage.src = certData.image || '';
+                // Set the image
+                if (certFullImage) {
+                    certFullImage.src = certData.image || '';
+                    certFullImage.alt = certData.name || 'Certificate';
+                }
+                
+                // Set the text content
                 if (certTitle) certTitle.textContent = certData.name || '';
                 if (certIssuer) certIssuer.textContent = `Issuer: ${certData.oem || 'Unknown'}`;
                 if (certObtained) certObtained.textContent = `Obtained: ${certData.obtained || 'N/A'}`;
                 if (certExpiry) certExpiry.textContent = `Expires: ${certData.expiry || 'No Expiry'}`;
                 
-                // IMPORTANT: Set the verify link to the SAME URL as the card button
+                // IMPORTANT: Set the verify button to use the SAME URL as the card
                 if (certVerify) {
                     if (certData.url) {
-                        certVerify.href = certData.url;  // Set the URL
-                        certVerify.target = '_blank';     // Open in new tab
+                        certVerify.href = certData.url;      // Set the URL from JSON
+                        certVerify.target = '_blank';         // Open in new tab
+                        certVerify.rel = 'noopener noreferrer'; // Security
                         certVerify.style.display = 'inline-flex';
-                        console.log('Set verify URL to:', certData.url); // Debug
+                        certVerify.textContent = 'Verify Certificate';
+                        // Add icon if needed
+                        certVerify.innerHTML = '<i class="fas fa-check-circle"></i> Verify Certificate';
                     } else {
                         certVerify.href = '#';
                         certVerify.style.display = 'none';
                     }
                 }
                 
+                // Show the modal
                 modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                
             } catch (e) {
                 console.error('Error parsing certificate data:', e);
             }
@@ -784,12 +796,14 @@ function initCertificateModal() {
     });
     
     // Close modal when clicking close button
-    closeBtn.addEventListener('click', () => {
-        modal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    });
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    }
     
-    // Close modal when clicking outside
+    // Close modal when clicking outside the content
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.classList.remove('active');
@@ -797,7 +811,7 @@ function initCertificateModal() {
         }
     });
     
-    // Also handle escape key
+    // Close modal with Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
             modal.classList.remove('active');
