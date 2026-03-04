@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashutosh Chaudhary | Network & Security Engineer</title>
+    <meta name="description" content="Network and Security Engineer specializing in Endpoint Security, Threat Mitigation, Vulnerability Management, and Email Security">
+    <meta name="keywords" content="Cybersecurity, Network Security, Endpoint Security, CrowdStrike, AWS, Security Engineer">
+    <meta name="author" content="Aashutosh Chaudhary">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Aashutosh Chaudhary | Network & Security Engineer">
+    <meta property="og:description" content="Network and Security Engineer with expertise in cybersecurity, incident response, and compliance">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button (Top Right Corner) -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo" id="logo">Aashutosh <span>Chaudhary</span></a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#badges">Badges</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content - Dynamically Loaded -->
+    <main id="main-content"></main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© <span id="currentYear"></span> Aashutosh Chaudhary. All rights reserved.</p>
+                <p class="footer-quote">"Securing tomorrow's infrastructure, today."</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div class="cert-modal" id="certModal">
+        <div class="cert-modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="cert-modal-body">
+                <img id="certFullImage" src="" alt="Certificate">
+                <div class="cert-details">
+                    <h3 id="certTitle"></h3>
+                    <p id="certIssuer"></p>
+                    <p id="certObtained"></p>
+                    <p id="certExpiry"></p>
+                    <a id="certVerify" href="#" target="_blank" class="btn btn-primary">Verify Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
