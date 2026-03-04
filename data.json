@@ -523,38 +523,32 @@
     {
       "name": "Raechal Enterprises Pvt. Ltd",
       "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
-      "industry": "IT Security Solutions",
-      "description": "Security Analyst (Nov 2022 - Feb 2024)"
+      "industry": "IT Security Solutions"
     },
     {
       "name": "Max International",
       "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
-      "industry": "Technology",
-      "description": "Network and Security Engineer (Jan 2025 - Jun 2025)"
+      "industry": "Technology"
     },
     {
       "name": "AI Solution Pvt. Ltd",
       "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
-      "industry": "AI & Security",
-      "description": "Network and Security Engineer (Jun 2025 - Present)"
+      "industry": "AI & Security"
     },
     {
       "name": "iCash Pvt. Ltd",
       "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
-      "industry": "FinTech",
-      "description": "Product Designer Intern (Feb 2022 - Jul 2022)"
+      "industry": "FinTech"
     },
     {
       "name": "Virtually Testing Foundation",
       "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
-      "industry": "Cybersecurity Education",
-      "description": "Penetration Tester Intern (Oct 2021 - Dec 2021)"
+      "industry": "Cybersecurity Education"
     },
     {
       "name": "SRM Films",
       "logo": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749878763/IMG_7041_s9ftmh.jpg",
-      "industry": "Media & Entertainment",
-      "description": "Video Editor Intern (Mar 2020 - May 2020)"
+      "industry": "Media & Entertainment"
     }
   ]
 }
