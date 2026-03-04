@@ -456,35 +456,25 @@
   ],
   "experiences": [
     {
-      "company": "SRM Films",
-      "position": "Video Editor | Internship",
-      "duration": "March 2020 - May 2020",
+      "company": "AI Solution Pvt. Ltd",
+      "position": "Network and Security Engineer",
+      "duration": "June 2025 - Present",
       "desc": [
-        "Assisted with editing short clips and videos.",
-        "Tools: Wondershare Filmora · Adobe Premiere Pro"
+        "Spearhead the deployment and administration of CrowdStrike Falcon EDR and next-generation antivirus solutions to identify, analyze, and neutralize threats, ensuring comprehensive endpoint protection. Also perform continuous vulnerability scanning and risk prioritization using CrowdStrike Threat Graph and Spotlight to support proactive security posture management.",
+        "Utilize Cortex XDR to aggregate and correlate telemetry from endpoints, network traffic, and cloud environments, significantly enhancing threat detection accuracy and incident response times.",
+        "Oversee and maintain email security platforms including Check Point Harmony Email and Collaboration, alongside endpoint detection solutions such as SentinelOne Singularity.",
+        "Tools: CrowdStrike Falcon · Harmony Email Collaboration · SentinelOne Singularity · Checkpoint EPP/EDR · Cortex XDR."
       ]
     },
     {
-      "company": "Virtually Testing Foundation",
-      "position": "Penetration Tester | Internship",
-      "duration": "October 2021 - December 2021",
+      "company": "Max International",
+      "position": "Network and Security Engineer",
+      "duration": "January 2025 - June 2025",
       "desc": [
-        "OWASP Top 10 and its fundamentals.",
-        "Web Application penetration testing - Labs.",
-        "Vulnerability Exploitations.",
-        "Professional pentest report writing.",
-        "Networked with the community through social media."
-      ]
-    },
-    {
-      "company": "iCash Pvt. Ltd",
-      "position": "Product Designer | Internship",
-      "duration": "February 2022 - July 2022",
-      "desc": [
-        "Conducted user research to inform design decisions, gaining insights into user needs, pain points, and behaviors.",
-        "Assisted senior designers in creating design concepts and mockups.",
-        "Provided support to end-users.",
-        "Skills: Canva · Adobe XD"
+        "Advanced deployment and management of CrowdStrike Falcon EDR and NGAV to proactively detect, investigate, and remediate threats, ensuring endpoint security across enterprise environments.",
+        "Leveraged CrowdStrike Threat Graph and Spotlight for real-time vulnerability assessment and prioritized remediation.",
+        "Knowledge of Email Security Solution Like Checkpoint Harmony Email and Collaboration EPP and EDR solution like SentinelOne Singularity.",
+        "Tools: CrowdStrike Falcon · Harmony Email Collaboration · SentinelOne Singularity · Checkpoint EPP/EDR."
       ]
     },
     {
@@ -503,27 +493,38 @@
       ]
     },
     {
-      "company": "Max International",
-      "position": "Network and Security Engineer",
-      "duration": "January 2025 - June 2025",
+      "company": "iCash Pvt. Ltd",
+      "position": "Product Designer | Internship",
+      "duration": "February 2022 - July 2022",
       "desc": [
-        "Advanced deployment and management of CrowdStrike Falcon EDR and NGAV to proactively detect, investigate, and remediate threats, ensuring endpoint security across enterprise environments.",
-        "Leveraged CrowdStrike Threat Graph and Spotlight for real-time vulnerability assessment and prioritized remediation.",
-        "Knowledge of Email Security Solution Like Checkpoint Harmony Email and Collaboration EPP and EDR solution like SentinelOne Singularity.",
-        "Tools: CrowdStrike Falcon · Harmony Email Collaboration · SentinelOne Singularity · Checkpoint EPP/EDR."
+        "Conducted user research to inform design decisions, gaining insights into user needs, pain points, and behaviors.",
+        "Assisted senior designers in creating design concepts and mockups.",
+        "Provided support to end-users.",
+        "Skills: Canva · Adobe XD"
       ]
     },
     {
-      "company": "AI Solution Pvt. Ltd",
-      "position": "Network and Security Engineer",
-      "duration": "June 2025 - Present",
+      "company": "Virtually Testing Foundation",
+      "position": "Penetration Tester | Internship",
+      "duration": "October 2021 - December 2021",
       "desc": [
-        "Spearhead the deployment and administration of CrowdStrike Falcon EDR and next-generation antivirus solutions to identify, analyze, and neutralize threats, ensuring comprehensive endpoint protection. Also perform continuous vulnerability scanning and risk prioritization using CrowdStrike Threat Graph and Spotlight to support proactive security posture management.",
-        "Utilize Cortex XDR to aggregate and correlate telemetry from endpoints, network traffic, and cloud environments, significantly enhancing threat detection accuracy and incident response times.",
-        "Oversee and maintain email security platforms including Check Point Harmony Email and Collaboration, alongside endpoint detection solutions such as SentinelOne Singularity.",
-        "Tools: CrowdStrike Falcon · Harmony Email Collaboration · SentinelOne Singularity · Checkpoint EPP/EDR · Cortex XDR."
+        "OWASP Top 10 and its fundamentals.",
+        "Web Application penetration testing - Labs.",
+        "Vulnerability Exploitations.",
+        "Professional pentest report writing.",
+        "Networked with the community through social media."
+      ]
+    },
+    {
+      "company": "SRM Films",
+      "position": "Video Editor | Internship",
+      "duration": "March 2020 - May 2020",
+      "desc": [
+        "Assisted with editing short clips and videos.",
+        "Tools: Wondershare Filmora · Adobe Premiere Pro"
       ]
     }
+
   ],
   "clients": [
     {
