@@ -125,24 +125,28 @@
     },
     {
       "name": "Blue Team Junior Analyst",
+      "oem": "Blue Team Security",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749459375/securityblueteam_fyxicu.jpg",
       "category": "Certifications",
       "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749462173/Blue_Team_Junior_Analyst_Pathway_Bundle-btja-1_ojwrik.png"
     },
     {
       "name": "SentinelOne Sales Engineer Expert",
+      "oem": "SentinelOne",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749459618/SentinalOne_ipeo9i.png",
       "category": "Certifications",
       "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749536280/SentinelOne_Pre-Sales_Tech_Accreditation_Procient_page-0001_qa1y4n.jpg"
     },
     {
       "name": "Certified in Cybersecurity (CC) Self-Placed",
+      "oem": "IsC2",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464489/isc2-logo-png_seeklogo-30_p5nd0x.png",
       "category": "Certifications",
       "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464488/Official_CC_Course_Completion_Certificate_Official_ISC_Certified_in_Cybersecurity_CC_Self-Paced_Training_-_1M_Chaudhary_page-0001_vhauuq.jpg"
     },
     {
       "name": "IT Fundamentals for Cybersecurity",
+      "oem": "IBM",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749463906/IBM_ykqpuz.png",
       "category": "Certifications",
       "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464044/IT_Fundamentals_for_Cybersecurity-1_dgem65.png"
@@ -155,12 +159,16 @@
     },
     {
       "name": "The Fundamentals of Digital Marketing",
+      "oem": "Google",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464191/Google__G__logo.svg_rncyg0.png",
       "category": "Certifications",
       "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749464168/Google_Garage_Digital_Marketing-1_kvnr4i.png"
     },
+
+
     {
       "name": "CrowdStrike Certified Falcon Administrator",
+      "oem": "CrowdStrike",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1753607023/crowdstrike-certified-falcon-administrator_1_ovqu0s.png",
       "category": "Badge",
       "url": "https://www.credly.com/earner/earned/badge/01ad8f0e-ecb6-4852-be83-6e300a5a30c2",
@@ -169,6 +177,7 @@
     },
     {
       "name": "Welcome Partners (CPSC)",
+      "oem": "Check Point",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772637748/blob_ykebsg.png",
       "category": "Badge",
       "url": "https://www.credly.com/earner/earned/badge/01ad8f0e-ecb6-4852-be83-6e300a5a30c2",
@@ -177,6 +186,7 @@
     },
      {
       "name": "SentinelOne Sales Engineer Expert",
+      "oem": "SentinelOne",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1751172821/SentinalOne_PreSales_Expert_qqpyxa.png",
       "category": "Badge",
       "url": "https://www.credly.com/earner/earned/badge/b0a7f5b1-7a7a-45a5-92ca-90b1a06507c9",
@@ -185,6 +195,7 @@
     },
     {
       "name": "SentinelOne Sales Engineer Professional",
+      "oem": "SentinelOne",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1751172820/SentinalOne_PreSales_Professional_vptrlp.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/2f554d81-c0ac-4f18-9d12-74bc37f83b56",
@@ -193,6 +204,7 @@
     },
     {
       "name": "AWS Certified Solution Architect - Associate",
+      "oem": "AWS",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1771998197/Solution_architect_badge_vqq93r.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/8bebddeb-71f0-4764-aaf1-acb37756b7f7",
@@ -201,6 +213,7 @@
     },
     {
       "name": "AWS Certified Cloud Practitioner",
+      "oem": "AWS",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1767591020/AWS_Cloud_Practitioner_xv6glr.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/3aa1aea4-93a9-4d62-b08e-234af3d88d87",
@@ -209,6 +222,7 @@
     },
   {
       "name": "AWS - Cloud Foundations",
+      "oem": "AWS",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1762938101/aws-academy-graduate-cloud-foundations-training-bad_bi7ddr.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/d86e52c5-fd0f-4383-9d6f-cf83ff781bcd",
@@ -217,6 +231,7 @@
 
     {
       "name": "CyberOps Associate",
+      "oem": "Cisco",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749458516/CyberOpsAssoc_n34gab.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/d0d546f0-5f43-4dd8-8dae-8a59f479cff2/public_url",
@@ -224,6 +239,7 @@
     },
     {
       "name": "CCNA: Introduction to Networks",
+      "oem": "Cisco",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749458765/CCNAITN__1__ainl0e.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/bff5e6b1-c26e-4451-b980-cb35f03767ca/public_url",
@@ -231,6 +247,7 @@
     },
     {
       "name": "CCNA: Switching, Routing, and Wireless Essentials",
+      "oem": "Cisco",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749458841/CCNASRWE__1__kjoieh.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/a748a6bf-e7c3-44b0-9e60-dc5baa2ae518/public_url",
@@ -238,6 +255,7 @@
     },
     {
       "name": "CCNA: Enterprise Networking, Security, and Automation",
+      "oem": "Cisco",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1755235979/CCNAENSA__1__mrojw9.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/8504e898-0ed6-4b3f-8b5c-127fac0c2070/public_url",
@@ -245,6 +263,7 @@
     },
     {
       "name": "Introduction to Cybersecurity",
+      "oem": "Cisco",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749459024/I2CS__1__hxlqbe.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/81432355-c7ed-45e2-8298-a0921f175dc5/public_url",
@@ -252,6 +271,7 @@
     },
     {
       "name": "Networking Academy Learn-A-Thon 2023",
+      "oem": "Cisco",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772637153/image_jwcpl3.png",
       "category": "Badge",
       "url": "https://www.credly.com/earner/earned/badge/fb66ccf9-1599-4aa1-993c-b1e65ba30985",
@@ -259,6 +279,7 @@
     },
     {
       "name": "OneLogin Technical Specialist",
+      "oem": "One Identity",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749458590/OneloginTechnicalSpecialist_dwrbc6.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/f24d1004-9ddd-4b96-96ed-d86079f2b94a/public_url",
@@ -266,6 +287,7 @@
     },
     {
       "name": "Safeguard Implementation Professional",
+      "oem": "One Identity",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749462842/Implementation_ydb3ir.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/4bd2c19e-b134-4172-88f9-f1133a628672/public_url",
@@ -273,6 +295,7 @@
     },
     {
       "name": "IBM QRadar SIEM Foundations",
+      "oem": "IBM",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749462687/IBMQRadar_re7qmy.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/e8490729-8d47-4251-b81b-0144004dda9c/public_url",
@@ -280,6 +303,7 @@
     },
     {
       "name": "Verify Access Technical Sales Intermediate",
+      "oem": "IBM",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749462925/Verifyaccess_k6wn8v.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/847d8386-438e-4cd7-9b11-4b37f0d84c8c/public_url",
@@ -287,6 +311,7 @@
     },
     {
       "name": "Verify Privilege Technical Sales Intermediate",
+      "oem": "IBM",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749463034/Verifyprev_tuzdce.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/a5cd75fb-279f-4296-8dc4-991fbbc47d4f/public_url",
@@ -294,6 +319,7 @@
     },
     {
       "name": "Verify Governance Technical Sales Intermediate",
+      "oem": "IBM",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772637461/image_1_tdfcup.png",
       "category": "Badge",
       "url": "https://www.credly.com/earner/earned/badge/5bfb5cf5-a24c-4886-b47e-349dfb3d3690",
@@ -301,6 +327,7 @@
     },
     {
       "name": "Getting Started in Cybersecurity 1.0",
+      "oem": "Fortinet",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749463145/fortinet_cyber_vd8kpj.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/a80ed390-7e73-4cbc-9416-737420bfee7f/public_url",
@@ -308,6 +335,7 @@
     },
     {
       "name": "Introduction to the Threat Landscape 1.0",
+      "oem": "Fortinet",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749463223/landscape_fortinet_zavlhk.png",
       "category": "Badge",
       "url": "https://www.credly.com/badges/cb44ec9d-bbf2-420f-800c-2f62221f0be9/public_url",
