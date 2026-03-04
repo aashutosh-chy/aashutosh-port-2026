@@ -286,7 +286,7 @@ function renderCertificationsSection() {
                                     <span class="${expiryClass}"><i class="fas fa-hourglass-half"></i> Expires: ${expiryDate}</span>
                                 </div>
                                 ${cert.url ? `
-                                    <a href="${cert.url}" target="_blank" class="cert-verify">
+                                    <a href="${cert.url}" target="_blank" class="cert-verify" onclick="event.stopPropagation()">
                                         <i class="fas fa-check-circle"></i> Verify
                                     </a>
                                 ` : ''}
@@ -735,20 +735,40 @@ function initCertificateModal() {
     
     if (!modal || !closeBtn) return;
     
+    // Remove any existing event listeners and add new ones
     certCards.forEach(card => {
-        card.addEventListener('click', (e) => {
+        card.addEventListener('click', function(e) {
             // Don't open modal if clicking on verify link
-            if (e.target.closest('.cert-verify')) return;
+            if (e.target.closest('.cert-verify')) {
+                return; // Let the link work normally
+            }
             
             try {
-                const certData = JSON.parse(card.dataset.cert.replace(/&apos;/g, "'"));
+                const certData = JSON.parse(this.dataset.cert.replace(/&apos;/g, "'"));
                 
-                document.getElementById('certFullImage').src = certData.image || '';
-                document.getElementById('certTitle').textContent = certData.name || '';
-                document.getElementById('certIssuer').textContent = `Issuer: ${certData.oem || 'Unknown'}`;
-                document.getElementById('certObtained').textContent = `Obtained: ${certData.obtained || 'N/A'}`;
-                document.getElementById('certExpiry').textContent = `Expires: ${certData.expiry || 'No Expiry'}`;
-                document.getElementById('certVerify').href = certData.url || '#';
+                const certFullImage = document.getElementById('certFullImage');
+                const certTitle = document.getElementById('certTitle');
+                const certIssuer = document.getElementById('certIssuer');
+                const certObtained = document.getElementById('certObtained');
+                const certExpiry = document.getElementById('certExpiry');
+                const certVerify = document.getElementById('certVerify');
+                
+                if (certFullImage) certFullImage.src = certData.image || '';
+                if (certTitle) certTitle.textContent = certData.name || '';
+                if (certIssuer) certIssuer.textContent = `Issuer: ${certData.oem || 'Unknown'}`;
+                if (certObtained) certObtained.textContent = `Obtained: ${certData.obtained || 'N/A'}`;
+                if (certExpiry) certExpiry.textContent = `Expires: ${certData.expiry || 'No Expiry'}`;
+                
+                // Set the verify link
+                if (certVerify) {
+                    if (certData.url) {
+                        certVerify.href = certData.url;
+                        certVerify.style.display = 'inline-flex';
+                    } else {
+                        certVerify.href = '#';
+                        certVerify.style.display = 'none';
+                    }
+                }
                 
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
@@ -758,11 +778,13 @@ function initCertificateModal() {
         });
     });
     
+    // Close modal when clicking close button
     closeBtn.addEventListener('click', () => {
         modal.classList.remove('active');
-        document.body.style.overflow = 'auto';
+        document.body.style.redirect = 'auto';
     });
     
+    // Close modal when clicking outside
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.classList.remove('active');
