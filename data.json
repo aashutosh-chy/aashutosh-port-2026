@@ -89,7 +89,13 @@
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772605652/Logo_1-GTB-DLP-SHIELD-vault-bkgrd-Transparent-Name-blue_giqgrd.png",
       "category": "Tools",
       "url": "https://gttb.com/network-enterprise-dlp/"
-    },    
+    }, 
+    {
+      "name": "Harmony Endpoint",
+      "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772697868/images_2_z0iphk.png",
+      "category": "Tools",
+      "url": "https://www.checkpoint.com/harmony/endpoint/"
+    },   
     {
       "name": "Computer Engineer",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749459259/NEC_yj9rbh.jpg",
