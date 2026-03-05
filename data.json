@@ -70,7 +70,7 @@
       "name": "Harmony Endpoint",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749372685/harmonyendpoint_poaqxc.png",
       "category": "Tools",
-      "url": "https://www.checkpoint.com/harmony/email-security/"
+      "url": "https://www.checkpoint.com/harmony/endpoint/"
     },
     {
       "name": "Harmony Email and Collaboration",
@@ -91,10 +91,10 @@
       "url": "https://gttb.com/network-enterprise-dlp/"
     }, 
     {
-      "name": "Harmony Endpoint",
-      "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772697868/images_2_z0iphk.png",
+      "name": "Cortex XDR",
+      "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772698285/maxresdefault_ha9mvy.jpg",
       "category": "Tools",
-      "url": "https://www.checkpoint.com/harmony/endpoint/"
+      "url": "https://www.paloaltonetworks.com/cortex/cortex-xdr"
     },   
     {
       "name": "Computer Engineer",
