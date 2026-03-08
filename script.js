@@ -559,7 +559,6 @@ function renderContactSection() {
     
     if (socials.length === 0) return '';
     
-    // Map icon names to Font Awesome classes
     const iconMap = {
         'FaLinkedin': 'fab fa-linkedin-in',
         'FaGithub': 'fab fa-github',
@@ -581,8 +580,10 @@ function renderContactSection() {
                         const iconClass = iconMap[social.icon] || 'fas fa-link';
                         const username = extractUsername(social.link);
                         return `
-                            <a href="${social.link}" target="_blank" class="social-card fade-up" rel="noopener noreferrer">
-                                <i class="${iconClass}"></i>
+                            <a href="${social.link}" target="_blank" class="social-card" rel="noopener noreferrer">
+                                <div class="icon-wrapper">
+                                    <i class="${iconClass}"></i>
+                                </div>
                                 <h3>${social.icon.replace('Fa', '')}</h3>
                                 <span>${username}</span>
                             </a>
