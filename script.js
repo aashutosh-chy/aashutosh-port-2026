@@ -306,7 +306,7 @@ function renderBadgesSection() {
     
     if (badges.length === 0) return '';
     
-    // Get unique OEMs from manual oem field
+    // Get unique OEMs
     const oems = ['All', ...new Set(badges.map(badge => badge.oem || 'Other'))];
     
     return `
@@ -334,7 +334,7 @@ function renderBadgesSection() {
                         const expiryClass = expiryDate === 'No Expiry' ? '' : (isExpired ? 'expiry-expired' : 'expiry-warning');
                         
                         return `
-                            <div class="badge-card fade-up" data-oem="${oem}">
+                            <div class="badge-card fade-up" data-oem="${oem}" data-badge='${JSON.stringify(badge).replace(/'/g, "&apos;")}'>
                                 <div class="badge-image">
                                     <img src="${badge.image}" alt="${badge.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/80'">
                                 </div>
@@ -344,9 +344,11 @@ function renderBadgesSection() {
                                     <span><i class="fas fa-calendar-alt"></i> Obtained: ${obtainedDate}</span>
                                     <span class="${expiryClass}"><i class="fas fa-hourglass-half"></i> Expires: ${expiryDate}</span>
                                 </div>
-                                <a href="${badge.url || '#'}" target="_blank" class="badge-verify">
-                                    <i class="fas fa-check-circle"></i> Verify
-                                </a>
+                                ${badge.url ? `
+                                    <a href="${badge.url}" target="_blank" class="badge-verify" onclick="event.stopPropagation();">
+                                        <i class="fas fa-check-circle"></i> Verify
+                                    </a>
+                                ` : ''}
                             </div>
                         `;
                     }).join('')}
@@ -997,7 +999,7 @@ function initializeAfterRender() {
     // Initialize intersection observer
     initIntersectionObserver();
     
-    // Initialize OEM filters (manual)
+    // Initialize OEM filters
     initOEMFilters();
     
     // Initialize project filters
@@ -1005,6 +1007,9 @@ function initializeAfterRender() {
     
     // Initialize certificate modal
     initCertificateModal();
+    
+    // Initialize badge modal (NEW)
+    initBadgeModal();
     
     // Initialize active nav links
     initActiveNavLinks();
@@ -1040,3 +1045,85 @@ document.addEventListener('keydown', (e) => {
         }
     }
 });
+
+// ==== Badge Function Modal ====
+
+function initBadgeModal() {
+    const modal = document.getElementById('badgeModal');
+    const closeBtn = document.getElementById('closeBadgeModal');
+    const badgeCards = document.querySelectorAll('.badge-card');
+    
+    if (!modal || !closeBtn) return;
+    
+    // Close modal when clicking close button
+    closeBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+    
+    // Close modal when clicking outside
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Handle badge card clicks
+    badgeCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Don't open modal if clicking on verify link
+            if (e.target.closest('.badge-verify')) {
+                return;
+            }
+            
+            try {
+                // Parse the badge data
+                const badgeData = JSON.parse(this.dataset.badge.replace(/&apos;/g, "'"));
+                console.log('Opening badge modal for:', badgeData.name);
+                
+                // Set modal content
+                document.getElementById('badgeFullImage').src = badgeData.image || '';
+                document.getElementById('badgeTitle').textContent = badgeData.name || '';
+                document.getElementById('badgeIssuer').textContent = `Issuer: ${badgeData.oem || 'Unknown'}`;
+                document.getElementById('badgeObtained').textContent = `Obtained: ${badgeData.obtained || 'N/A'}`;
+                document.getElementById('badgeExpiry').textContent = `Expires: ${badgeData.expiry || 'No Expiry'}`;
+                
+                // Set verify button
+                const verifyBtn = document.getElementById('badgeVerify');
+                if (verifyBtn) {
+                    if (badgeData.url) {
+                        verifyBtn.href = badgeData.url;
+                        verifyBtn.target = '_blank';
+                        verifyBtn.rel = 'noopener noreferrer';
+                        verifyBtn.style.display = 'inline-flex';
+                        verifyBtn.innerHTML = '<i class="fas fa-check-circle"></i> Verify Badge';
+                        
+                        // Ensure link works
+                        verifyBtn.onclick = function(e) {
+                            e.stopPropagation();
+                            window.open(badgeData.url, '_blank');
+                            return false;
+                        };
+                    } else {
+                        verifyBtn.style.display = 'none';
+                    }
+                }
+                
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                
+            } catch (e) {
+                console.error('Error parsing badge data:', e);
+            }
+        });
+    });
+    
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+}

@@ -455,6 +455,11 @@ body.dark-theme .image-caption {
     justify-content: center;
 }
 
+/* Badge modal specific styles (optional) */
+#badgeModal .cert-modal-content {
+    border-top: 5px solid var(--secondary);
+}
+
 .tech-icon {
     width: 50px;
     height: 50px;
