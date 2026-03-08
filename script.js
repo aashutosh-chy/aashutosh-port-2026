@@ -579,11 +579,12 @@ function renderContactSection() {
                 <div class="social-grid">
                     ${socials.map(social => {
                         const iconClass = iconMap[social.icon] || 'fas fa-link';
+                        const username = extractUsername(social.link);
                         return `
-                            <a href="${social.link}" target="_blank" class="social-card fade-up" rel="noopener">
+                            <a href="${social.link}" target="_blank" class="social-card fade-up" rel="noopener noreferrer">
                                 <i class="${iconClass}"></i>
                                 <h3>${social.icon.replace('Fa', '')}</h3>
-                                <span>${extractUsername(social.link)}</span>
+                                <span>${username}</span>
                             </a>
                         `;
                     }).join('')}
