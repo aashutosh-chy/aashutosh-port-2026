@@ -463,6 +463,7 @@
   "experiences": [
     {
       "company": "AI Solution Pvt. Ltd",
+      "url": "https://www.aisolution.com.np/",
       "position": "Network and Security Engineer",
       "duration": "June 2025 - Present",
       "desc": [
@@ -474,6 +475,7 @@
     },
     {
       "company": "Max International",
+      "url": "https://www.maxnepal.net/",
       "position": "Network and Security Engineer",
       "duration": "January 2025 - June 2025",
       "desc": [
@@ -485,6 +487,7 @@
     },
     {
       "company": "Raechal Enterprises Pvt. Ltd",
+      "url": "https://www.raechal.com.np/",
       "position": "Security Analyst",
       "duration": "November 2022 - February 2024",
       "desc": [
@@ -500,6 +503,7 @@
     },
     {
       "company": "iCash Pvt. Ltd",
+      "url": "https://www.icash.com.np/",
       "position": "Product Designer | Internship",
       "duration": "February 2022 - July 2022",
       "desc": [
@@ -511,6 +515,7 @@
     },
     {
       "company": "Virtually Testing Foundation",
+      "url": "https://vt.foundation",
       "position": "Penetration Tester | Internship",
       "duration": "October 2021 - December 2021",
       "desc": [

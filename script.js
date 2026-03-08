@@ -449,7 +449,15 @@ function renderExperienceSection() {
                             <div class="timeline-content">
                                 <div class="timeline-header">
                                     <h3>${exp.position || 'Position'}</h3>
-                                    <div class="timeline-company">${exp.company || 'Company'}</div>
+                                    <!-- MODIFIED: Company name now clickable if URL exists -->
+                                    <div class="timeline-company">
+                                        ${exp.url 
+                                            ? `<a href="${exp.url}" target="_blank" rel="noopener noreferrer" class="company-link">
+                                                ${exp.company || 'Company'} <i class="fas fa-external-link-alt"></i>
+                                               </a>`
+                                            : exp.company || 'Company'
+                                        }
+                                    </div>
                                     <span class="timeline-duration">${exp.duration || ''}</span>
                                 </div>
                                 

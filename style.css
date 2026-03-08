@@ -1220,6 +1220,43 @@ body.dark-theme .skill-category {
     margin-top: 4px;
 }
 
+/* Company links in experience section */
+.timeline-company .company-link {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: var(--transition);
+    border-bottom: 1px solid transparent;
+}
+
+.timeline-company .company-link:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+.timeline-company .company-link i {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.timeline-company .company-link:hover i {
+    opacity: 1;
+    transform: translateX(3px);
+}
+
+/* Dark mode support */
+body.dark-theme .timeline-company .company-link {
+    color: var(--secondary);
+}
+
+body.dark-theme .timeline-company .company-link:hover {
+    color: var(--primary);
+}
+
 /* ===== EDUCATION SECTION ===== */
 .education-section {
     background: var(--bg);
