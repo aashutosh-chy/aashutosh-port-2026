@@ -362,6 +362,17 @@
   ],
   "projects": [
     {
+      "name": "Why EDR and XDR is No Longer Optional - It's the Backbone of Modern Security",
+      "description": "We have antivirus. We're covered. The threat landscape has moved way past that. Ransomware operators don't announce themselves, they live inside your network for days, use your own tools against you, and strike when you least expect it. That's exactly why EDR and XDR are no longer optional.",
+      "category": "Blogs",
+      "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/q_auto/f_auto/v1775192075/Screenshot_2026-04-03_011425_ze94kh.png",
+      "links": {
+        "code": "",
+        "video": "",
+        "visit": "https://www.linkedin.com/pulse/why-edr-xdr-longer-optional-its-backbone-modern-aashutosh-chaudhary-ybopc/"
+      }
+    },
+    {
       "name": "Nepal's Largest Data Center",
       "description": "WorldLink Strengthens Nepal’s Digital Future with Its Largest Data Center",
       "category": "Blogs",
@@ -369,7 +380,7 @@
       "links": {
         "code": "",
         "video": "",
-        "visit": "https://www.linkedin.com/pulse/worldlink-strengthens-nepals-digital-future-its-data-center-lwckc/?trackingId=2JE%2FmgRqRHqzXmbG%2BaQ2xw%3D%3D"
+        "visit": "https://www.linkedin.com/pulse/worldlink-strengthens-nepals-digital-future-its-data-center-lwckc/"
       }
     },
     {
@@ -380,7 +391,7 @@
       "links": {
         "code": "",
         "video": "",
-        "visit": "https://www.linkedin.com/pulse/end-windows-10-support-what-you-need-know-aashutosh-chaudhary-zlcgc/?trackingId=RtmtH6ucT4S%2F9wD5Cf0V9Q%3D%3D"
+        "visit": "https://www.linkedin.com/pulse/end-windows-10-support-what-you-need-know-aashutosh-chaudhary-zlcgc/"
       }
     },
     {
