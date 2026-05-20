@@ -95,7 +95,13 @@
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772698285/maxresdefault_ha9mvy.jpg",
       "category": "Tools",
       "url": "https://www.paloaltonetworks.com/cortex/cortex-xdr"
-    },   
+    },  
+    {
+      "name": "Check Point Firewall",
+      "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1779276760/cropped_circle_image_q9nulw.png",
+      "category": "Tools",
+      "url": "https://www.checkpoint.com"
+    },  
     {
       "name": "Computer Engineer",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1772969936/cropped_circle_image_9_cny3j6.png",
