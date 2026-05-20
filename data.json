@@ -484,10 +484,12 @@
       "position": "Network and Security Engineer",
       "duration": "June 2025 - Present",
       "desc": [
-        "Spearhead the deployment and administration of CrowdStrike Falcon EDR and next-generation antivirus solutions to identify, analyze, and neutralize threats, ensuring comprehensive endpoint protection. Also perform continuous vulnerability scanning and risk prioritization using CrowdStrike Threat Graph and Spotlight to support proactive security posture management.",
-        "Utilize Cortex XDR to aggregate and correlate telemetry from endpoints, network traffic, and cloud environments, significantly enhancing threat detection accuracy and incident response times.",
-        "Oversee and maintain email security platforms including Check Point Harmony Email and Collaboration, alongside endpoint detection solutions such as SentinelOne Singularity.",
-        "Tools: CrowdStrike Falcon · Harmony Email Collaboration · SentinelOne Singularity · Checkpoint EPP/EDR · Cortex XDR."
+        "Lead deployment and administration of CrowdStrike Falcon EDR/NGAV using Threat Graph and Spotlight for vulnerability assessment and proactive security posture management.",
+        "Deploy and optimize Palo Alto Cortex XDR to improve endpoint visibility, telemetry correlation, threat detection, and incident response efficiency.",
+        "Manage enterprise security platforms including Prisma Access, Check Point Harmony Email & Collaboration, and SentinelOne Singularity across client environments.",
+        "Perform deployment and policy management of Check Point Firewall solutions for secure remote access, traffic filtering, and network segmentation.",
+        "Execute GTB DLP Proof of Concept (PoC) implementations focused on sensitive data monitoring and policy enforcement.",
+        "Tools: CrowdStrike Falcon · Harmony Email & Collaboration · SentinelOne Singularity · Checkpoint EPP/EDR · Cortex XDR · GTB DLP."
       ]
     },
     {
@@ -496,9 +498,10 @@
       "position": "Network and Security Engineer",
       "duration": "January 2025 - June 2025",
       "desc": [
-        "Advanced deployment and management of CrowdStrike Falcon EDR and NGAV to proactively detect, investigate, and remediate threats, ensuring endpoint security across enterprise environments.",
-        "Leveraged CrowdStrike Threat Graph and Spotlight for real-time vulnerability assessment and prioritized remediation.",
-        "Knowledge of Email Security Solution Like Checkpoint Harmony Email and Collaboration EPP and EDR solution like SentinelOne Singularity.",
+        "Assisted in deployment and administration of CrowdStrike Falcon EDR/NGAV across enterprise client environments.",
+        "Performed vulnerability assessments and remediation prioritization using CrowdStrike Spotlight and Threat Graph.",
+        "Supported deployment and optimization of endpoint and email security solutions including Check Point Harmony Email & Collaboration and SentinelOne Singularity.",
+        "Assisted clients with troubleshooting, policy configuration, and endpoint security management.",
         "Tools: CrowdStrike Falcon · Harmony Email Collaboration · SentinelOne Singularity · Checkpoint EPP/EDR."
       ]
     },
@@ -508,13 +511,11 @@
       "position": "Security Analyst",
       "duration": "November 2022 - February 2024",
       "desc": [
-        "Demonstrated expertise in deploying/supporting leading security solutions: Rapid7's InsightVM, ManageEngine's ADSelfService Plus, PAM360.",
-        "Skillful use of ManageEngine's ADManager Plus, Vulnerability Manager Plus, Patch Manager Plus, Rapid7's InsightAppSec, Crowdstrike's EDR/NGAV for robust security.",
-        "Actively advise financial institutions in on-site meetings, enhancing security solutions.",
-        "Contribute to comprehensive security policies, following industry best practices.",
-        "Thoroughly test and evaluate measures for effective asset/data protection.",
-        "Communicate security findings effectively, fostering team collaboration.",
-        "Stay current on security trends/threats, continuously enhance expertise.",
+        "Delivered deployment, configuration, and technical support for enterprise security solutions including Rapid7 InsightVM, PAM360, ADSelfService Plus, ADManager Plus, Patch Manager Plus, InsightAppSec, and CrowdStrike Falcon.",
+        "Participated in technical engagements with financial institutions, providing cybersecurity recommendations, deployment guidance, and solution support.",
+        "Supported implementation of security policies, operational best practices, and security control validation activities.",
+        "Conducted security testing and solution evaluations to strengthen enterprise security posture and improve operational resilience.",
+        "Collaborated with internal teams to enhance troubleshooting efficiency, operational awareness, and security support processes.",
         "Tools: Insight VM · PAM360 · ADSelfService Plus · ADManager Plus · Crowdstrike EDR/NGAV"
       ]
     },
@@ -524,9 +525,9 @@
       "position": "Product Designer | Internship",
       "duration": "February 2022 - July 2022",
       "desc": [
-        "Conducted user research to inform design decisions, gaining insights into user needs, pain points, and behaviors.",
-        "Assisted senior designers in creating design concepts and mockups.",
-        "Provided support to end-users.",
+        "Conducted user research and usability analysis to support product improvement initiatives.",
+        "Assisted in developing design concepts, interface mockups, and user-focused enhancements.",
+        "Provided end-user support and usability assistance for digital products and applications",
         "Skills: Canva · Adobe XD"
       ]
     },
