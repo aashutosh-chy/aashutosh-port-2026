@@ -136,6 +136,15 @@
       "expiry": "January 4, 2026"
     },
     {
+      "name": "Microsoft Certified: Identity and Access Administrator Associate",
+      "oem": "Microsoft",
+      "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1782123503/Screenshot_2026-06-22_160148_vbbmqj.png",
+      "category": "Certifications",
+      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1782123503/Microsoft_SC300_jhdyhf.png",
+      "obtained": "June 19, 2026",
+      "expiry": "June 20, 2027"
+    },
+    {
       "name": "Blue Team Junior Analyst",
       "oem": "Blue Team Security",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1749459375/securityblueteam_fyxicu.jpg",
