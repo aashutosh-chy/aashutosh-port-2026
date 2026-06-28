@@ -136,6 +136,15 @@
       "expiry": "January 4, 2026"
     },
     {
+      "name": "Microsoft Certified: Azure Administrator Associate",
+      "oem": "Microsoft",
+      "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1782647603/Microsoft_AZ104_ad7znc.png",
+      "category": "Certifications",
+      "url": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1782123503/Microsoft_SC300_jhdyhf.png",
+      "obtained": "June 28, 2026",
+      "expiry": "June 29, 2027"
+    },
+    {
       "name": "Microsoft Certified: Identity and Access Administrator Associate",
       "oem": "Microsoft",
       "image": "https://res.cloudinary.com/dqzeyhnuy/image/upload/v1782123503/Screenshot_2026-06-22_160148_vbbmqj.png",
